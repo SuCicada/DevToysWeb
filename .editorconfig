@@ -1,0 +1,17 @@
+# @see: http://editorconfig.org
+
+root = true
+
+[*] # Indicates that all documents apply
+charset = utf-8 # Set the file character set to utf-8
+end_of_line = lf # Control line wrapping type(lf | cr | crlf)
+insert_final_newline = true # Always insert a new line at the end of the file
+indent_style = space # Indent style (tab | space）
+indent_size = 2 # Indent size
+max_line_length = 130 # maximum line length
+[Makefile]
+indent_style = tab
+indent_size = 4
+[*.md] # Indicates that the following rule applies only to md files
+max_line_length = off # Turn off the maximum line length limit
+trim_trailing_whitespace = false # Turn off trailing whitespace trimming

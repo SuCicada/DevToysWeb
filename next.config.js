@@ -3,7 +3,7 @@ const runtimeCaching = require("next-pwa/cache");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = withPWA({
-  reactStrictMode: true,
+  reactStrictMode: false,
   i18n: {
     locales: ["en", "ja"],
     defaultLocale: "en",
