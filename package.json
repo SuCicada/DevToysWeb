@@ -2,10 +2,10 @@
   "name": "devtoys",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev  -H 0.0.0.0",
     "build": "next build",
     "postbuild": "node ./scripts/generate-sitemap.mjs",
-    "start": "next start -p 6000",
+    "start": "next start -p 6000 -H 0.0.0.0",
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "next lint",
@@ -19,6 +19,7 @@
   "dependencies": {
     "@headlessui/react": "^1.6.0",
     "@monaco-editor/react": "^4.3.1",
+    "axios": "^1.6.3",
     "byte-base64": "^1.1.0",
     "change-case": "^4.1.2",
     "crypto-js": "^4.1.1",
@@ -39,6 +40,7 @@
     "react-icons": "^4.3.1",
     "react-reflex": "^4.0.6",
     "sql-formatter": "^4.0.2",
+    "styled-components": "^6.1.8",
     "title-case": "^3.0.3",
     "upper-case": "^2.0.2",
     "uuid": "^8.3.2",

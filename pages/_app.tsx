@@ -28,6 +28,8 @@ function App({ Component, pageProps }: AppProps) {
     return null;
   }
 
+  console.log("pageProps", pageProps);
+  console.log("router", router);
   return (
     <ThemeProvider attribute="class">
       <Header setNavIsOpen={setNavIsOpen} />

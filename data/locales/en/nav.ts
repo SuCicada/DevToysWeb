@@ -164,6 +164,13 @@ export const nav: Nav = [
     icon: IconText,
     items: [
       {
+        title: "日本語振り仮名",
+        longTitle: "日本語振り仮名",
+        href: `${localePath}/text/japanese-firigana`,
+        icon: IconInspectorCaseConverter,
+        desc: "日本語振り仮名 japanese-firigana",
+      },
+      {
         title: "Inspector & Case Converter",
         longTitle: "Text Case Converter and Inspector",
         href: `${localePath}/text/inspector-case-converter`,

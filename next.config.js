@@ -7,6 +7,7 @@ const nextConfig = withPWA({
   i18n: {
     locales: ["en", "ja"],
     defaultLocale: "en",
+    localeDetection: false,
   },
   pwa: {
     dest: "public",

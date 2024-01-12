@@ -34,6 +34,7 @@ import {
   VscNewFile,
   VscNote,
   VscPaintcan,
+  VscPlay,
   VscRegex,
   VscSearch,
   VscSettings,
@@ -77,15 +78,14 @@ export const IconTheme = generateIconMedium(VscPaintcan);
 export const IconWrap = generateIconMedium(VscWordWrap);
 export const IconLineNumber = generateIconMedium(VscListOrdered);
 export const IconHightlight = generateIconMedium(VscEdit);
+export const IconPlay = generateIconMedium(VscPlay);
 
 // Sidebar Icons
 
 const generateIcon = (Icon: React.VFC) => {
   const IconComponent = ({ large }: IconProps = { large: false }) => {
     return (
-      <IconContext.Provider
-        value={{ size: large ? ICON_SIZE_LARGE : ICON_SIZE_SMALL }}
-      >
+      <IconContext.Provider value={{ size: large ? ICON_SIZE_LARGE : ICON_SIZE_SMALL }}>
         <Icon />
       </IconContext.Provider>
     );
