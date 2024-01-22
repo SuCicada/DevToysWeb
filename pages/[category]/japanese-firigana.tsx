@@ -59,7 +59,7 @@ const JapaneseHtml = (arrayLike: ArrayLike<number>) => {
 
     const options = {
       method: "POST",
-      url: "http://asus.sucicada.me:41401/convert",
+      url: process.env.NEXT_PUBLIC_JAPANESE_FURIGANA_API,
       // url: 'http://localhost:41401/convert',
       headers: { "content-type": "application/json" },
       data: { text: str },
@@ -131,7 +131,7 @@ const JapaneseHtml = (arrayLike: ArrayLike<number>) => {
 
     const options = {
       method: "POST",
-      url: "http://asus.sucicada.me:41402/ttsapi/generate_audio",
+      url: process.env.NEXT_PUBLIC_TTS_HUB_API,
       headers: { "content-type": "application/json" },
       data: {
         tts_engine: "gtts",
