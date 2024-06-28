@@ -51,6 +51,13 @@ export const nav: Nav = [
         icon: IconNumberBase,
         desc: "Convert numbers from one base to another",
       },
+      {
+        title: "Post Form <> Json",
+        longTitle: "Post Form <> Json Converter",
+        href: `${localePath}/converters/post-form-json`,
+        icon: IconConverters,
+        desc: "Convert Post x-www-form-urlencoded data to Post Json and vice versa",
+      },
     ],
   },
   {
